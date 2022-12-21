@@ -1,0 +1,199 @@
+@font-face { font-family: MontSerratBlack; src: url('../fonts/montserrat-black.ttf'); } 
+ 
+
+:root {
+    --gray: #e4e3e3;
+    --dinari-dark:#232323;
+}
+
+
+
+* {
+    font-family: 'Montserrat', sans-serif;   
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    height: 62px;
+    border-radius: 0 0 20px 20px;
+    background-color: white;
+    -webkit-box-shadow: 0px 6px 33px -8px rgb(156 156 156 / 75%);
+    font-weight: 600;
+}
+
+.fw-bolder {
+    font-weight: bolder;
+    font-family: MontSerratBlack;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fw-regular {
+    font-weight: normal;
+}
+
+.fw{
+    font-weight: lighter;
+}
+
+      .timeline {
+            --timeline-before: 0;
+            --timeline-opacity: 0;
+            --scale:0;
+
+        }
+
+        body{
+            overflow-x: hidden;
+        }
+
+        .min-container{
+            max-width: 95%;
+            margin: 0 auto;
+        }
+
+        .min-container-alt{
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        
+        .min-container.about-us{
+            border-radius: 50px;
+        }
+
+        .blurried-back{
+            -webkit-box-shadow: 0px 6px 46px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 6px 46px -7px rgba(0,0,0,0.75);
+box-shadow: 0px 6px 46px -7px rgba(0,0,0,0.75);
+        }
+
+        .overlayed-about-us{
+            height: 450px;
+            border-radius: 50px;
+            transform: translate(0, -150px);
+        }
+
+
+        .timeline.text-white:before {
+            
+            top: 22px;
+
+            content: '';
+            position: absolute;
+            color: white;
+            left: -13px;
+            background: white;
+            width: 5px;
+            height: var(--timeline-before);
+            border-radius: 12px;
+        }
+
+        .timeline.text-white:after {
+            
+            border-radius: 20px;
+            top: 16px;
+            content: '';
+            position: absolute;
+            color: white;
+            left: -21px;
+            background: white;
+            width: 20px;
+            height: 20px;
+        }
+
+        .timeline2.text-white:after {
+            
+            width: 22px;
+            border-radius: 20px;
+            top: 16px;
+            content: '';
+            position: absolute;
+            color: white;
+            left: -34px;
+            height: 22px;
+            background: white;
+            opacity: var(--timeline-opacity);
+            
+
+        }
+
+
+
+
+
+
+.feature-leading{
+    padding: 76px 120px 76px 120px;
+    border-radius: 120px;
+    background-color: var(--dinari-dark);
+}
+
+.feature-item {
+    background-color: var(--gray);
+    height: 150px;
+    max-width: 500px ;
+    border-radius: 6000px;
+}
+
+.about-us-timeline{
+    transform: translate(0, -400px);
+}
+
+.dark-glass{
+    /* From https://css.glass */
+background: rgb(214 214 214)    ;
+border-radius: 100px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7px);
+-webkit-backdrop-filter: blur(7px);
+border: 1px solid rgba(189, 175, 175, 0.32);
+z-index: 5;
+}
+
+
+.how-it-works{
+    position: relative;
+    top: -793px;
+}
+
+.hiw-leading{
+    height: 300px;
+    padding: 0 20%;
+    background-color: var(--gray);
+    width: 90%;
+    border-radius: 90px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 50px;
+}
+
+.about-us-timeline{
+    border-radius: 00px;
+}
+
+.hiw-questions-holder {
+    padding: 30px 24% 100px 10%;
+    background-color: var(--gray);
+    width: 90%;
+    border-radius: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.question:after{
+    content: url(../imgs/step-arrow.svg);
+    position: absolute;
+    right: -45px;
+    top: 0;
+    /* height: 75px; */
+    width: 24px;
+}

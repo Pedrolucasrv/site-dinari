@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 45.426 450.326">
+  <g id="seta" transform="translate(37.903 5.5) rotate(90)">
+    <line id="Linha_2" data-name="Linha 2" x2="436.81" transform="translate(0 14.961)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="11"/>
+    <line id="Linha_3" data-name="Linha 3" y1="15" x2="25.684" transform="translate(411.619 15.38)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="11"/>
+    <line id="Linha_4" data-name="Linha 4" x2="25.684" y2="15" transform="translate(411.619)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="11"/>
+  </g>
+</svg>
