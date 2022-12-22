@@ -1,11 +1,30 @@
 gsap.registerPlugin(ScrollTrigger);
 
 
+gsap
+    .timeline({
+      scrollTrigger: {
+        trigger:'.fade-up',
+        start: "top bottom",
+        end: "+=20px",
+        scrub: 3,
+        markers: false,
+      }
+    })
+    .from('.fade-up', {
+        y: 50,
+        opacity:0
+    })
+
+  ;
+
+
+
  gsap
     .timeline({
       scrollTrigger: {
         trigger:'.about-us',
-        start: "-100px bottom",
+        start: "-200px bottom",
         end: "+=50",
         scrub: 3,
         markers: false,
