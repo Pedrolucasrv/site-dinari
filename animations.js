@@ -5,13 +5,13 @@ gsap
     .timeline({
       scrollTrigger: {
         trigger:'.fade-up',
-        start: "top bottom",
-        end: "+=20px",
-        scrub: 3,
-        markers: false,
+        start: "top 10%",
+        end:'1px',
+        scrub: 1,
+        markers: true,
       }
     })
-    .from('.fade-up', {
+    .from('.fade-up h2', {
         y: 50,
         opacity:0
     })
