@@ -64,6 +64,10 @@ header > div{
     font-weight: lighter;
 }
 
+.bg-gray{
+    background-color: var(--dinari-dark);
+}
+
       .timeline {
             --timeline-before: 0;
             --timeline-opacity: 0;
@@ -86,7 +90,7 @@ header > div{
         }
         
         .min-container.about-us{
-            border-radius: 50px;
+            border-radius: 50px 50px 0 0;
         }
 
         .blurried-back{
@@ -96,51 +100,51 @@ box-shadow: 0px 6px 46px -7px rgba(0,0,0,0.75);
         }
 
         .overlayed-about-us{
-            height: 450px;
+            height: 350px;
             border-radius: 50px;
             transform: translate(0, -150px);
+            padding:0 20%;
         }
 
 
         .timeline.text-white:before {
-            
-            top: 17px;
-
+            top: 50px;
             content: '';
             position: absolute;
             color: white;
-            left: -13px;
+            left: -13.5px;
             background: white;
-            width: 5px;
+            width: 6px;
             height: var(--timeline-before);
             border-radius: 12px;
         }
 
         .timeline.text-white:after {
             
+            
             border-radius: 20px;
-            top: 10px;
+            top: 32px;
             content: '';
             position: absolute;
             color: white;
-            left: -21px;
+            left: -25px;
             background: white;
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
         }
 
         .timeline2.text-white:after {
             
-            width: 22px;
-            border-radius: 20px;
-            top: 10px;
-            content: '';
-            position: absolute;
-            color: white;
-            left: -34px;
-            height: 22px;
-            background: white;
-            opacity: var(--timeline-opacity);
+            width: 30px;
+    border-radius: 20px;
+    top: 35px;
+    content: '';
+    position: absolute;
+    color: white;
+    left: -38px;
+    height: 30px;
+    background: white;
+    opacity: var(--timeline-opacity);
             
 
         }
@@ -165,12 +169,12 @@ box-shadow: 0px 6px 46px -7px rgba(0,0,0,0.75);
 }
 
 .about-us-timeline{
-    transform: translate(0, -335px);
+    transform: translate(0, -115px);
 }
 
 .dark-glass{
     /* From https://css.glass */
-background: rgb(214 214 214)    ;
+background: rgb(255, 255, 255)    ;
 border-radius: 100px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(7px);
@@ -207,7 +211,7 @@ z-index: 5;
 }
 
 .hiw-leading{
-    height: 300px;
+    height: 230px;
     padding: 0 20%;
     background-color: var(--gray);
     width: 90%;
@@ -284,3 +288,103 @@ button.submit-btn{
     100% {transform: translate(0,0px);}
   }
   
+  .timeline .h2, .timeline2 .h2 {
+    font-size: 3rem !important;
+  }
+
+  .timeline p, .timeline2 p {
+        font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  .form-top{
+    z-index: 7; 
+    border-radius: 130px;
+    height: 445px; 
+    margin-top: -10px;
+  }
+
+  .form-self{
+    top: -115px;
+    z-index: 6;
+    border-radius: 0 0 50px 50px;
+    padding-bottom: 50px;
+  }
+
+  .form-self > form{
+    z-index: 55; padding-top: 100px;
+  }
+
+.hiw-container{
+    height: 800px;
+}
+
+@media (max-width:768px) {
+    .m-max-100{
+        max-width: 100% !important;
+    }
+
+    .m-max-90{
+        max-width: 90% !important;
+    }
+
+    .hiw-container{
+        height: auto;
+    }
+
+    .form-top{
+        z-index: 5;
+        top: -100px;
+        height: 285px;
+        border-radius: 50px 50px 0 0;
+        padding: 0 10%;
+    }
+
+    .question:after {
+        content: url(../imgs/step-arrow.svg);
+        position: absolute;
+        right: -45px;
+        top: 0;
+        /* height: 75px; */
+        width: 18px;
+    }
+
+    .hiw-leading {
+        transform: translate(0px, 0px);
+        height: 230px;
+        padding: 0 16%;
+        background-color: var(--gray);
+        width: 90%;
+        border-radius: 90px 90px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* position: sticky; */
+        /* top: 119px; */
+        /* mix-blend-mode: difference; */
+    }
+
+    .hiw-questions-holder {
+        padding: 30px 24% 100px 10%;
+        background-color: var(--gray);
+        width: 90%;
+        border-radius: 0 0 90px 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .about-us-timeline {
+        transform: translate(0, 0px) !important;
+    }
+
+    .overlayed-about-us{
+        height: 350px;
+        border-radius: 50px;
+        transform: translate(0, 0px) !important;
+        padding: 0 10%;
+    }
+        
+}
+

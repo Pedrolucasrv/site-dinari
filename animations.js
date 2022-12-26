@@ -1,22 +1,22 @@
 gsap.registerPlugin(ScrollTrigger);
 
 
-gsap
-    .timeline({
-      scrollTrigger: {
-        trigger:'.fade-up',
-        start: "top 10%",
-        end:'1px',
-        scrub: 1,
+// gsap
+//     .timeline({
+//       scrollTrigger: {
+//         trigger:'.fade-up',
+//         start: "top 10%",
+//         end:'1px',
+//         scrub: 1,
        
-      }
-    })
-    .from('.fade-up h2', {
-        y: 50,
-        opacity:0
-    })
+//       }
+//     })
+//     .from('.fade-up h2', {
+//         y: 50,
+//         opacity:0
+//     })
 
-  ;
+//   ;
 
 
 
@@ -39,35 +39,35 @@ gsap
   ;
 
 
-gsap
-.timeline({
-    scrollTrigger: {
+// gsap
+// .timeline({
+//     scrollTrigger: {
 
-    trigger: '.about-us-timeline',
-    start: 'top top',
-    scrub: 5,
-    endTrigger: ".end-scp",
-    end: "+=500",
-    pinSpacing: true,
-    pin:true,
+//     trigger: '.about-us-timeline',
+//     start: 'top top',
+//     scrub: 5,
+//     endTrigger: ".end-scp",
+//     end: "+=500",
+//     pinSpacing: true,
+//     pin:true,
    
-    }
-})
-.from('.dinari-animated-logo', {
-    x: 50,
-    transform: 'rotate(13deg)'
-})  .to('.timeline', {
-    '--timeline-before': '295px',
-}, '<' )
-.to('.timeline2', {
-  '--timeline-opacity': '1',
-}, '>' ).from('.timeline2  .h2', {
-  x: 100,
-  opacity:0
-}, '<' )
-.from('.timeline2  .display-6', {
-  y: 100,
-  opacity:0
-}, '<' )
+//     }
+// })
+// .from('.dinari-animated-logo', {
+//     x: 50,
+//     transform: 'rotate(13deg)'
+// })  .to('.timeline', {
+//     '--timeline-before': '220px',
+// }, '<' )
+// .to('.timeline2', {
+//   '--timeline-opacity': '1',
+// }, '>' ).from('.timeline2  svg', {
+//   x: 100,
+//   opacity:0
+// }, '<' )
+// .from('.timeline2  .display-6', {
+//   y: 100,
+//   opacity:0
+// }, '<' )
 
 
