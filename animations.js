@@ -8,7 +8,7 @@ gsap
         start: "top 10%",
         end:'1px',
         scrub: 1,
-        markers: true,
+       
       }
     })
     .from('.fade-up h2', {
@@ -50,7 +50,7 @@ gsap
     end: "+=500",
     pinSpacing: true,
     pin:true,
-    markers: true
+   
     }
 })
 .from('.dinari-animated-logo', {
