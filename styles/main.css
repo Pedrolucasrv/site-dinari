@@ -337,6 +337,10 @@ button.submit-btn{
     height: 700px;
 }
 
+.question .display-6{
+    max-width: 370px;
+}
+
 @media (max-width:1252px) {
     .capt-lead{
         margin-top: 33%;
