@@ -91,6 +91,7 @@ header > div{
         
         .min-container.about-us{
             border-radius: 50px 50px 0 0;
+            height: 300px;
         }
 
         .blurried-back{
@@ -151,13 +152,20 @@ box-shadow: 0px 6px 46px -7px rgba(0,0,0,0.75);
 
 
 
-
+.intersection{
+  
+    margin-bottom: 150px;
+}
 
 
 .feature-leading{
-    padding: 76px 120px 76px 120px;
+    padding: 76px 57px 76px 57px;
     border-radius: 120px;
     background-color: var(--dinari-dark);
+}
+
+.about-us-inner{
+    min-height: 100vh;
 }
 
 .feature-item {
@@ -169,7 +177,7 @@ box-shadow: 0px 6px 46px -7px rgba(0,0,0,0.75);
 }
 
 .about-us-timeline{
-    transform: translate(0, -115px);
+    transform: translate(0, 0px);
 }
 
 .dark-glass{
@@ -186,7 +194,7 @@ z-index: 5;
 
 .how-it-works{
     position: relative;
-    top: 220px;
+    top: 275px;
 }
 
 .z-10{
@@ -278,6 +286,11 @@ button.submit-btn{
     border-radius: 30px;
 }
 
+.footer-border{
+    border-right: 5px solid white;
+
+}
+
 .scroll-down{
     animation: 3s infinite scroll-down;
 }
@@ -304,6 +317,11 @@ button.submit-btn{
     margin-top: -10px;
   }
 
+  .capt-lead
+  {
+    margin-top: 21%;
+  }
+
   .form-self{
     top: -115px;
     z-index: 6;
@@ -316,10 +334,51 @@ button.submit-btn{
   }
 
 .hiw-container{
-    height: 800px;
+    height: 700px;
+}
+
+@media (max-width:1252px) {
+    .capt-lead{
+        margin-top: 33%;
+    }
+    .hiw-container{
+        height: 840px;
+    }
+}
+
+
+@media (max-width:1024px) {
+    .capt-lead {
+        margin-top: 33%;
+    }
+    .min-container.about-us{
+        border-radius: 50px 50px 0 0;
+        height: auto;
+    }
+
+ .form-top{
+    z-index: 7;
+    border-radius: 130px;
+    height: 290px;
+    margin-top: -10px;
+ }
+}
+
+@media (max-width:992px) {
+    .footer-border {
+        border-right: 0px solid white;
+        border-bottom: 4px solid white;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
 }
 
 @media (max-width:768px) {
+
+    .intersection {
+        margin-bottom: 0px;
+    }
+
     .m-max-100{
         max-width: 100% !important;
     }
@@ -353,7 +412,7 @@ button.submit-btn{
         transform: translate(0px, 0px);
         height: 230px;
         padding: 0 16%;
-        background-color: var(--gray);
+        background-color: white;
         width: 90%;
         border-radius: 90px 90px 0 0;
         display: flex;
@@ -386,5 +445,8 @@ button.submit-btn{
         padding: 0 10%;
     }
         
+    .capt-lead{
+        margin-top: 426px;
+    }
 }
 
