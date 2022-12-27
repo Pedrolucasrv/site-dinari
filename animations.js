@@ -70,3 +70,23 @@ gsap
 }, '<' )
 
 
+//header
+
+var headerActive = false
+
+const setHeader = () => {
+  headerActive = !headerActive
+    if(headerActive){
+    gsap.to('.mobile-header-links', {
+    top: '10vh',
+      },)
+    }
+    else{
+      gsap.to('.mobile-header-links', {
+       top: '-400px',
+      },)
+    }
+}
+
+
+

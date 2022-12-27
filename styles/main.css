@@ -1,5 +1,8 @@
 @font-face { font-family: MontSerratBlack; src: url('../fonts/montserrat-black.ttf'); } 
  
+html{
+    overflow-x: hidden;
+}
 
 :root {
     --gray: #e4e3e3;
@@ -62,6 +65,12 @@ header > div{
 
 .fw{
     font-weight: lighter;
+}
+
+.fade-up{
+    min-height: 590px;
+    border-radius: 0 0 50px 50px; 
+    top: -70px;
 }
 
 .bg-gray{
@@ -178,6 +187,27 @@ box-shadow: 0px 6px 46px -7px rgba(0,0,0,0.75);
 
 .about-us-timeline{
     transform: translate(0, 0px);
+}
+
+.testimonial-container {
+    display: flex;
+}
+
+.testimonial{
+    margin: 0 20px;
+    width: 400px;
+    height: auto !important;
+    background: #232323;
+    border-radius: 58px;
+    padding: 25px 10px;
+    display: flex !important;
+    align-items: center;
+}
+
+.slick-prev:before, .slick-next:before {
+   
+    color: black !important;
+
 }
 
 .dark-glass{
@@ -341,9 +371,15 @@ button.submit-btn{
     max-width: 370px;
 }
 
+@media (max-width:1764px) {
+    .capt-lead{
+        margin-top: 26%;
+    }
+}
+
 @media (max-width:1252px) {
     .capt-lead{
-        margin-top: 33%;
+        margin-top: 37%;
     }
     .hiw-container{
         height: 840px;
@@ -378,7 +414,15 @@ button.submit-btn{
 }
 
 @media (max-width:768px) {
-
+    .blurried-back {
+        -webkit-box-shadow: 0px 6px 46px -7px rgb(0 0 0 / 75%);
+        -moz-box-shadow: 0px 6px 46px -7px rgba(0,0,0,0.75);
+        box-shadow: 8px -44px 46px -42px rgb(0 0 0 / 75%);
+    }
+    
+    header > div{
+        border-radius: 0;
+    }
     .intersection {
         margin-bottom: 0px;
     }
@@ -442,6 +486,12 @@ button.submit-btn{
         transform: translate(0, 0px) !important;
     }
 
+    .fade-up{
+        min-height: 590px;
+        border-radius: 0 0 50px 50px; 
+        top: 0px;
+    }
+
     .overlayed-about-us{
         height: 350px;
         border-radius: 50px;
@@ -450,7 +500,12 @@ button.submit-btn{
     }
         
     .capt-lead{
-        margin-top: 426px;
+        margin-top: 600px;
     }
+}
+
+.mobile-header-links{
+    top: -400px;
+    height: 400px;
 }
 
