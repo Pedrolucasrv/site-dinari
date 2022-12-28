@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dinari</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="/imgs/dinariPay-favicon.png">
 
+
+
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- JavaScript Bundle with Popper -->
     <!-- CSS only -->
@@ -28,10 +33,12 @@
                 <a href="">QUEM SOMOS</a>
             </div>
 
-            <div class="mobile-header-links blurried-back links-holder d-md-none d-flex flex-column flex-column gap-5 position-absolute bg-white w-100 ">
-                <a href="">ANTECIPAÇÃO DE RECEBÍVEIS</a>
-                <a href="">CONTATO</a>
-                <a href="">QUEM SOMOS</a>
+            <div class="mobile-header-links links-holder d-md-none d-flex flex-column flex-column gap-5 position-absolute bg-white w-100 container justify-content-center " style="left: 0;">
+                <div class="d-flex flex-column gap-3">
+                    <a href="">ANTECIPAÇÃO DE RECEBÍVEIS</a>
+                    <a href="">CONTATO</a>
+                    <a href="">QUEM SOMOS</a>
+                </div>
             </div>
             <div class="d-block d-md-none">
                 <a id="header-trigger" onclick="setHeader()">
@@ -98,7 +105,7 @@
                 <img src="./imgs/flare.png" alt="">
             </div>
         </section> 
-         <section class="container py-3 mt-5 text-center px-5 bg-dark text-white" style="border-radius: 50px;" id="first-section">
+         <section class="container-fluid py-3 mt-5 text-center px-5 bg-white blurried-back text-dark" style="max-width: 90%; border-radius: 50px;" id="first-section">
             <h2>
                 Torne a sua <strong class="fw-bolder">operação mais ágil, e melhore o seu fluxo de
 caixa</strong>   sem depender de empréstimos bancários!
@@ -305,7 +312,7 @@ caixa</strong>   sem depender de empréstimos bancários!
             </div>
             <section class="how-it-works w-100 position-absolute container-fluid">
                 <div class="row">
-                    <div class="col-12 col-md-5 d-flex justify-content-center position-relative hiw-container">
+                    <div class="col-12 col-md-5 d-flex justify-content-center position-relative hiw-container mobile-p-0">
                         <div class="blurried-back hiw-leading">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 364 194.578">
                                 <text id="Como_funciona_" data-name="Como
@@ -319,7 +326,7 @@ caixa</strong>   sem depender de empréstimos bancários!
                               
                         </div>
                     </div>
-                    <div class="col-12 col-md-7 d-flex justify-content-center">
+                    <div class="col-12 col-md-7 d-flex justify-content-center  mobile-p-0">
                         <div class="blurried-back hiw-questions-holder text-end">
                             <div class="mt-5 question position-relative">
                                 <h2 class="fw-bolder w-100">Passo 1: </h2>
@@ -575,9 +582,9 @@ caixa</strong>   sem depender de empréstimos bancários!
 
 
 
-    <footer>
-
-        <div class="bg-gray " >
+    <footer class="bg-gray">
+        <div class="text-dark bg-white pt-3 pb-2" style="border-radius: 0px 0px 30px 30px;"></div>
+        <div class="" >
             <div class="container-fluid" style="max-width: 90%;">
                 <div class="row py-5">
 
@@ -597,7 +604,7 @@ caixa</strong>   sem depender de empréstimos bancários!
                         </div>
                     </div>
                 </div>
-                <div class="text-dark bg-white pt-3 pb-2" style="border-radius: 30px 30px 0 0;">
+                <!-- <div class="text-dark bg-white pt-3 pb-2" style="border-radius: 30px 30px 0 0;">
                     <div class="row">
 
                         <div class="col-lg-2 d-flex justify-content-center">
@@ -617,7 +624,7 @@ caixa</strong>   sem depender de empréstimos bancários!
                             <h5 class="m-lg-0 mb-3 fw-bold">Segurança e uso da internet</h5>
                             
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
