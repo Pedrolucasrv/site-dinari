@@ -1,0 +1,16 @@
+.debenturies{
+    background-image: url(../../imgs/debenturies-bg.svg);
+    background-size: auto;
+    height: 358px;
+    background-position-y: 2%;
+    background-position-x: 48%;
+   position: relative;
+   z-index: 5;
+    
+}
+
+.debenturies-content{
+    top: -25px;
+    z-index: 6;
+    position: relative;
+}

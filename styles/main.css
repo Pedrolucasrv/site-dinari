@@ -87,9 +87,7 @@ header > div{
 
         }
 
-        body{
-            overflow-x: hidden;
-        }
+    
 
         .min-container{
             max-width: 95%;
@@ -329,6 +327,35 @@ button.submit-btn{
     animation: 3s infinite scroll-down;
 }
 
+.custom-bg{
+    background-image: url(../imgs/24_Receitas_clássicas_de_Restaurantes_Famosos_para_fazer_em_casa.pdf\ \(4\).png);
+    background-size: cover;
+    backdrop-filter: opacity(0.5);
+}
+
+.debentures {
+    min-height: 100vh;
+}
+
+.debentures-side{
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    object-position: right;
+    /* width: -webkit-fill-available; */
+    position: absolute;
+    bottom: 90px;
+    height: inherit;
+    max-height: -webkit-fill-available;
+}
+
+.secure-invest {
+    border-radius: 0 var(--main-radius) 0 0;
+}
+
+.debentures-footer{
+    border-radius: 0 0 var(--main-radius) var(--main-radius);
+    height: 90px;
+}
+
 @keyframes scroll-down {
     0%   {transform: translate(0,0px);}
     50%  {transform: translate(0,-5px);}
@@ -346,7 +373,7 @@ button.submit-btn{
 
   .form-top{
     z-index: 7; 
-    border-radius: 130px;
+    border-radius: var(--main-radius);
     height: 445px; 
     margin-top: -10px;
   }
@@ -368,7 +395,7 @@ button.submit-btn{
   }
 
 .hiw-container{
-    height: 700px;
+    height: auto;
 }
 
 .question .display-6{
@@ -383,10 +410,10 @@ button.submit-btn{
 
 @media (max-width:1252px) {
     .capt-lead{
-        margin-top: 37%;
+        margin-top: 10%;
     }
     .hiw-container{
-        height: 840px;
+        height: auto;
     }
 }
 
@@ -402,7 +429,7 @@ button.submit-btn{
 
  .form-top{
     z-index: 7;
-    border-radius: 130px;
+    border-radius: var(--main-radius);
     height: 290px;
     margin-top: -10px;
  }
@@ -447,7 +474,7 @@ button.submit-btn{
         z-index: 5;
         top: -100px;
         height: 285px;
-        border-radius: 50px 50px 0 0;
+        border-radius: var(--main-radius) var(--main-radius) 0 0;
         padding: 0 10%;
     }
 
@@ -461,9 +488,7 @@ button.submit-btn{
     }
 
     .hiw-leading {
-        transform: translate(0px, 0px);
-        height: 230px;
-        background-color: white;
+        transform: translate(0px, 14px);
         width: 90%;
         border-radius: 90px 90px 0 0;
         display: flex;
@@ -504,6 +529,14 @@ button.submit-btn{
         
     .capt-lead{
         margin-top: 105px;
+    }
+
+    .debentures-footer{
+        height: 145px ;
+    }
+
+    .secure-invest{
+        border-radius: 0;
     }
 }
 
