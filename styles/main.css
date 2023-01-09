@@ -541,8 +541,15 @@ button.submit-btn{
     }
 }
 
+.links-holder {
+    background-color:#E9E9E9;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+
 .mobile-header-links{
     top: -400px;
     height: 400px;
+    border-radius: 0;
 }
-
