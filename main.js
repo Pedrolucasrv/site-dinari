@@ -8,6 +8,9 @@ $( document ).ready(function() {
             
     });
 
+
+
+
     $('.carousel').slick({
         autoplay:true,
         arrows:true,
@@ -49,6 +52,9 @@ $( document ).ready(function() {
             // instead of a settings object
           ]
       });
+
+    $("#demo").maskMoney();
+
 });
 
 var slider = document.getElementById("myRange");
@@ -59,12 +65,16 @@ slider.oninput = function() {
   output.value = this.value;
   var calc = (slider.value / 1000000) *100;
   slider.style.backgroundImage  = `linear-gradient(90deg, #0BA915 ${calc}%, #00FFFF ${100 - calc}%);`
+  $("#demo").maskMoney();
+
 }
 
 output.oninput = function() {
+  
   var calc = (slider.value / 1000000) *100;
   slider.style.backgroundImage  = `linear-gradient(90deg, #0BA915 ${calc}%, #00FFFF ${100 - calc}%);`
   slider.value = this.value;
+  $("#demo").maskMoney();
 }
 
 var sliderColaboradores = document.getElementById("rangeColaboradores");
@@ -73,7 +83,7 @@ outputColaboradores.innerHTML = sliderColaboradores.value;
 
 sliderColaboradores.oninput = function() {
   outputColaboradores.value = this.value;
-  var calc = (sliderColaboradores.value / 1000000) *100;
+  var calc = (sliderColaboradores.value / 1000000) * 100;
   sliderColaboradores.style.backgroundImage  = `linear-gradient(90deg, #0BA915 ${calc}%, #00FFFF ${100 - calc}%);`
 }
 
@@ -82,3 +92,15 @@ outputColaboradores.oninput = function() {
   sliderColaboradores.style.backgroundImage  = `linear-gradient(90deg, #0BA915 ${calc}%, #00FFFF ${100 - calc}%);`
   sliderColaboradores.value = this.value;
 }
+
+$( ".radioLabel" ).change(function() {
+  if($('.radioSocio').is(':checked')){
+  
+
+    $('.labelSocio').addClass('activeLabel')
+    $('.labelRepresentante').removeClass('activeLabel')
+  }else{
+    $('.labelRepresentante').addClass('activeLabel')
+    $('.labelSocio').removeClass('activeLabel')
+  }
+});

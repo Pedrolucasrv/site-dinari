@@ -7,7 +7,7 @@ html{
 :root {
     --gray: #e4e3e3;
     --dinari-dark:#232323;
-
+    --dinari:#00641c ;
     --main-radius: 17px;
 
 }
@@ -31,6 +31,11 @@ body::before {
 
 a{
     text-decoration: none;
+    color: inherit;
+
+}
+
+a:hover{
     color: inherit;
 }
 
@@ -201,7 +206,7 @@ box-shadow: 0px 6px 46px -7px rgba(0,0,0,0.75);
     width: 400px;
     height: auto !important;
     background: #232323;
-    border-radius: 58px;
+    border-radius: var(--main-radius);
     padding: 25px 10px;
     display: flex !important;
     align-items: center;
@@ -270,7 +275,7 @@ z-index: 5;
 }
 
 .hiw-questions-holder {
-    max-width: 614px;
+    max-width: 660px;
     padding: 30px 24% 100px 10%;
     background-color: var(--gray);
     width: 90%;
@@ -338,6 +343,7 @@ button.submit-btn{
 
 .debentures {
     min-height: 100vh;
+    overflow-x: hidden ;
 }
 
 .debentures-side{
@@ -390,7 +396,6 @@ button.submit-btn{
     top: -115px;
     z-index: 6;
     border-radius: 0 0 50px 50px;
-    padding-bottom: 50px;
   }
 
   .form-self > form{
@@ -655,4 +660,29 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.radioLabel {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: var(--main-radius);
+    
+}
+
+label.activeLabel {
+    font-weight: bolder !important;
+    color: var(--dinari-dark);
+    background: rgb(0,255,199) !important;
+    background: linear-gradient(126deg, rgba(0,255,199,1) 35%, rgba(0,233,67,1) 100%) !important;
+}
+
+.range-container.faturamento-container {
+    padding:  100px 0 !important;
 }
