@@ -43,13 +43,10 @@ gsap
 .timeline({
     scrollTrigger: {
     trigger: '.about-us-timeline',
-    start: "50% 50%",
+    start: "top 50%",
     scrub: 5,
-    anticipatePin:2,
-    end: "+=800",
-    pinSpacing: true,
-    pin:'.about-us-timeline',
-   
+
+    end: "+=50",
     }
 })
 .from('.dinari-animated-logo', {

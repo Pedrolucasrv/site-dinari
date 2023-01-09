@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="75" viewBox="0 0 64 75">
+  <defs>
+    <filter id="União_8" x="0" y="0" width="64" height="75" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.431"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="União_8-2" x="0" y="0" width="64" height="75" filterUnits="userSpaceOnUse">
+      <feOffset dx="-19" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="11.5" result="blur-2"/>
+      <feFlood flood-color="#00c59d" flood-opacity="0.902" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#União_8)">
+      <path id="União_8-3" data-name="União 8" d="M23,46.312V57S3.986,49.46.5,27.966A23.392,23.392,0,0,1,0,23.157a23,23,0,1,1,46,0,23.4,23.4,0,0,1-.5,4.81C42.014,49.461,23,57,23,57Z" transform="translate(9 6)" fill="#0ca80c"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#União_8-2)">
+      <path id="União_8-4" data-name="União 8" d="M23,46.312V57S3.986,49.46.5,27.966A23.392,23.392,0,0,1,0,23.157a23,23,0,1,1,46,0,23.4,23.4,0,0,1-.5,4.81C42.014,49.461,23,57,23,57Z" transform="translate(9 6)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

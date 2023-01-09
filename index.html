@@ -415,22 +415,48 @@ entraremos em contato com você.
                     <h2 class="text-center fw-bolder">
                         Nós mesmos entraremos em contato com você.
                     </h2>
-                    <p class="m-0 text-center">Somente nossos analistas terão acesso a sua resposta.</p>
-                    <div class="my-5 row">
-                        <div class="col-md-6 col-12">
-
+                    <p class="mb-2 text-center">Somente nossos analistas terão acesso a sua resposta.</p>
+                    <div class="col-12 border"></div>
+                    <h2 class="text-center mt-3 mb-0 fw-bolder">
+                        Sobre sua empresa:
+                    </h2>
+                    <div class="mb-5 mt-3s row px-md-4">
+                        <div class="col-md-6 col-12 ">
+                            <div class="range-container bg-gray py-5 px-2 dinari-rounded d-flex flex-column align-items-center justify-content-center">
+                                <h2 class="fw-light text-Center pb-4 text-white">Faturamento mensal:</h2>
+                                <input type="range" min="1" max="1000000" value="500000" class="slider position-relative faturamento" id="myRange">
+                                
+                                    <input id="demo" style="background-color: #3F3F3F;"  type="number" class="faturamentoValue mt-5 dinari-rounded   " placeholder="Digite um valor">
+                            </div>
+                            
                         </div>
                         <div class="col-md-6 col-12">
+                            <div class="range-container my-5 my-md-0 bg-gray py-5 px-2 dinari-rounded d-flex flex-column align-items-center justify-content-center">
+                                <h2 class="fw-light text-Center pb-4 text-white">Número de colaboradores:</h2>
+                                <input type="range" min="1" max="100" value="1" class="slider position-relative" id="rangeColaboradores">
+                                
+                                    <input id="valueColaboradores" style="background-color: #3F3F3F;"  type="number" class="faturamentoValue mt-5 dinari-rounded " placeholder="Digite um valor">
+                            </div>
 
-                            <div class=""><input type="text" placeholder="CPF ou CNPJ"></div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class=" mt-3"><input class="controled-input" type="text" placeholder="CNPJ"></div>
+
+                        </div>
+                        <div class="col-md-7 col-12">
+                            <h2 class="fw-bolder text-center">Dados de contato:</h2>
+                            <div class=" w-100"><input  type="text" class="w-100 controled-input" placeholder="Seu Nome"></div>
+                            <div class=" w-100"><input class="controled-input" type="email" placeholder="Seu e-mail"></div>
+                            <div class="  w-100"><input type="text" class="phone controled-input" placeholder="Seu telefone"></div>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <h2 class="fw-bolder text-center">Qual seu cargo?</h2>
+                            
+                            <div class="w-100"><button type="submit" class="submit-btn controled-input"><p class="m-0  h5 text-white">Enviar</p></button></div>
                         </div>
                     </div>
                     <div class="row px-2 px-md-5">
-                        <div class="col-md-6 col-12"><input type="text" placeholder="Primeiro Nome"></div>
-                        <div class="col-md-6 col-12"><input type="text" placeholder="Último nome"></div>
-                        <div class="col-12"><input type="email" placeholder="Seu e-mail"></div>
-                        <div class="col-md-8 col-12"><input type="text" class="phone" placeholder="Seu telefone"></div>
-                        <div class="col-md-4 col-12"><button type="submit" class="submit-btn"><p class="m-0  h5 text-white">Enviar</p></button></div>
+                        
                     </div>
                 </form>
             </div>

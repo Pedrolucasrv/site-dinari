@@ -50,3 +50,35 @@ $( document ).ready(function() {
           ]
       });
 });
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.value = this.value;
+  var calc = (slider.value / 1000000) *100;
+  slider.style.backgroundImage  = `linear-gradient(90deg, #0BA915 ${calc}%, #00FFFF ${100 - calc}%);`
+}
+
+output.oninput = function() {
+  var calc = (slider.value / 1000000) *100;
+  slider.style.backgroundImage  = `linear-gradient(90deg, #0BA915 ${calc}%, #00FFFF ${100 - calc}%);`
+  slider.value = this.value;
+}
+
+var sliderColaboradores = document.getElementById("rangeColaboradores");
+var outputColaboradores = document.getElementById("valueColaboradores");
+outputColaboradores.innerHTML = sliderColaboradores.value;
+
+sliderColaboradores.oninput = function() {
+  outputColaboradores.value = this.value;
+  var calc = (sliderColaboradores.value / 1000000) *100;
+  sliderColaboradores.style.backgroundImage  = `linear-gradient(90deg, #0BA915 ${calc}%, #00FFFF ${100 - calc}%);`
+}
+
+outputColaboradores.oninput = function() {
+  var calc = (sliderColaboradores.value / 1000000) *100;
+  sliderColaboradores.style.backgroundImage  = `linear-gradient(90deg, #0BA915 ${calc}%, #00FFFF ${100 - calc}%);`
+  sliderColaboradores.value = this.value;
+}
